@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans Ms", sans-serif;
+}
+
+body {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    to bottom right,
+    rgb(71, 0, 158),
+    rgb(0, 46, 174) 90%
+  );
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.password {
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+  word-break: break-all;
+
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 0.3em 1em;
+}
+
+.password-components-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-field-label {
+  font-size: 1.1rem;
+  align-self: flex-start;
+}
+
+.form-field-input {
+  accent-color: rgb(124, 47, 218);
+}
+
+.form-button {
+  padding: 0.3em 1em;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(38, 97, 208);
+  color: white;
+}
+
+.form-button:hover {
+  background-color: rgb(23, 82, 243);
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 13px;
+  }
+
+  .form-field {
+    flex-direction: column;
+  }
+}

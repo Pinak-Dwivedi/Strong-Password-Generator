@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+
+    <title>Strong Password Generator</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Strong Password Generator</h1>
+
+      <div class="password" data-password></div>
+
+      <form class="password-components-form" data-password-components-form>
+        <div class="form-field">
+          <label for="password-length-number" class="form-field-label"
+            >Password Length</label
+          >
+          <input
+            type="range"
+            min="0"
+            max="50"
+            value="15"
+            data-password-length-range
+            class="form-field-input"
+          />
+          <input
+            type="number"
+            id="password-length-number"
+            min="0"
+            max="50"
+            value="15"
+            data-password-length-number
+            class="form-field-input"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="password-uppercase" class="form-field-label"
+            >Include Uppercase</label
+          >
+          <input
+            type="checkbox"
+            id="password-uppercase"
+            data-password-uppercase
+            class="form-field-input"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="password-lowercase" class="form-field-label"
+            >Include Lowercase</label
+          >
+          <input
+            type="checkbox"
+            id="password-lowercase"
+            checked
+            data-password-lowercase
+            class="form-field-input"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="password-numbers" class="form-field-label"
+            >Include Numbers</label
+          >
+          <input
+            type="checkbox"
+            id="password-numbers"
+            checked
+            data-password-numbers
+            class="form-field-input"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="password-special-characters" class="form-field-label"
+            >Include Special Characters</label
+          >
+          <input
+            type="checkbox"
+            id="password-special-characters"
+            data-password-special-characters
+            class="form-field-input"
+          />
+        </div>
+
+        <button type="submmit" class="form-button" data-form-button>
+          Generate
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
